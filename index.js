@@ -1,3 +1,16 @@
+import { Footer, Header, Main, Nav } from "./components";
+
+const render = () => {
+  document.querySelector("#root").innerHTML = `
+  ${Footer()}
+  ${Header()}
+  ${Main()}
+  ${Nav()}
+  `;
+};
+
+render();
+
 // add menu toggle to bars icon in nav bar
 document.querySelector(".fa-bars").addEventListener("click", () => {
   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
